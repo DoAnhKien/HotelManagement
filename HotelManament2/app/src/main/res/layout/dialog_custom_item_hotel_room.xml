@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius_dialog_hotel"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvDialogHotelRoomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bạn hay chọn thao tác cần thực hiện với phòng 102"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDialogCreateBill"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius_hotel_btn_dialog"
+        android:gravity="center"
+        android:text="Lập Phiếu Phòng"
+        android:textColor="#01C4F2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDialogEditHotelRoom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius_hotel_btn_dialog"
+        android:gravity="center"
+        android:text="Chỉnh sửa"
+        android:textColor="#01C4F2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDialogCancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radius_hotel_btn_dialog"
+        android:gravity="center"
+        android:text="Đóng"
+        android:textColor="#01C4F2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:src="@drawable/work"/>-->
+
+
+</LinearLayout>

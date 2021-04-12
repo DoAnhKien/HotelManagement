@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="hotelRoom"
+            type="com.example.hotelmanament2.model.HotelRoom" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/radius_hotel_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRoomNumber"
+            set_int_to_string="@{hotelRoom.roomNumber}"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/radius_hotel_main_number"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTypeRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{hotelRoom.typeRoom}"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvRoomStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{hotelRoom.status}"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDayPrice"
+                    set_int_to_string="@{hotelRoom.dayPrice}"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvFristHourPrices"
+                    set_int_to_string="@{hotelRoom.fristHourPrice}"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tvHourPrice"
+                    set_int_to_string="@{hotelRoom.hourPrice}"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

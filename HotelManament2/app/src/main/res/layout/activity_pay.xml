@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.activity.PayActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HÓA ĐƠN THANH TOÁN"
+        android:textColor="#0088FF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvCustomerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số hóa đơn" />
+
+    <TextView
+        android:id="@+id/tvSetDatTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày giớ lập 20:56:06 21/9/2019" />
+
+    <TextView
+        android:id="@+id/tvRoomRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thuê phòng 103 vào lúc 20:53:00 21/12/2018" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền Phòng" />
+
+    <TextView
+        android:id="@+id/tvDetailContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="100.000 + 0 giờ * 50000  100000"
+        android:textColor="#2F00FF"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/tvTotalMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="10000000"
+        android:textColor="#2F00FF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Thực hiện thanh toán" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ĐÓNG" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServicesUsing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

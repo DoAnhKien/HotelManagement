@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Báo Cáo">
+        <menu>
+            <item
+                android:id="@+id/nav_show_list_customer_using"
+                android:icon="@drawable/ic_share"
+                android:title="KHÁCH HÀNG ĐANG THUÊ" />
+        </menu>
+    </item>
+    <item android:title="DANH MỤC">
+        <menu>
+            <item
+                android:id="@+id/nav_show_customer_services"
+                android:icon="@drawable/ic_menu_book"
+                android:title="DANH SÁCH DỊCH VỤ" />
+        </menu>
+    </item>
+
+    <item android:title="GIỚI THIỆU">
+        <menu>
+            <item
+                android:id="@+id/nav_show_info_app"
+                android:icon="@drawable/ic_warning"
+                android:title="GIỚI THIỆU ỨNG DỤNG" />
+        </menu>
+    </item>
+
+</menu>

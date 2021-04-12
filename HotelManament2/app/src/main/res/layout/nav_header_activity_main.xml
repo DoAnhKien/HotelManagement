@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="#3F99BC"
+              android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_female_user"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Khách Sạn"
+            android:textColor="@color/white"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hỗ trợ quản lý phòng đang cho thuê ở các Khách Sạn, đơn giản và tiện lợi"
+            android:textColor="@color/white"/>
+
+</LinearLayout>
