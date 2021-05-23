@@ -15,15 +15,15 @@ public class UserServices {
 
     public User addUser(User user) {
         User tempUser = userRepository.findUserByUserEmail(user.getUserEmail());
-        if (tempUser!=null) {
+        if (tempUser != null) {
             return null;
         }
         return userRepository.save(user);
     }
 
-    public User addUSer1(User user){
+    public User addUSer1(User user) {
         User tempUser = userRepository.findUserByUserEmail(user.getUserEmail());
-        if (tempUser!=null) {
+        if (tempUser != null) {
             return null;
         }
         return userRepository.save(user);
@@ -31,6 +31,10 @@ public class UserServices {
 
     public List<User> getAllUser() {
         return (List<User>) userRepository.findAll();
+    }
+
+    public void deleteUerById(int id) {
+        userRepository.deleteById(id);
     }
 
 }
