@@ -5,18 +5,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pokemon")
-public class Pokemon {
+@Table(name = "user_pokemon")
+public class UserPokemon {
     @Id()
     private int id;
     private String userEmail;
     private String pokemonName;
     private String pokemonUrl;
 
-    public Pokemon() {
+    public UserPokemon() {
     }
 
-    public Pokemon(int id, String userEmail, String pokemonName, String pokemonUrl) {
+    public UserPokemon(int id, String userEmail, String pokemonName, String pokemonUrl) {
         this.id = id;
         this.userEmail = userEmail;
         this.pokemonName = pokemonName;

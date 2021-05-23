@@ -8,31 +8,30 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User {
     @Id()
-    private int id;
+    private int userId;
     private String userEmail;
     private String userName;
     private String userPassword;
     private String userPermission;
-    private String userKey;
 
     public User() {
     }
 
-    public User(int id, String userEmail, String userName, String userPassword, String userPermission, String userKey) {
-        this.id = id;
+    public User(int userId, String userEmail, String userName, String userPassword, String userPermission) {
+        this.userId = userId;
         this.userEmail = userEmail;
         this.userName = userName;
         this.userPassword = userPassword;
         this.userPermission = userPermission;
-        this.userKey = userKey;
     }
 
-    public int getId() {
-        return id;
+
+    public int getUserId() {
+        return userId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUserEmail() {
@@ -66,12 +65,8 @@ public class User {
     public void setUserPermission(String userPermission) {
         this.userPermission = userPermission;
     }
-
-    public String getUserKey() {
-        return userKey;
-    }
-
-    public void setUserKey(String userKey) {
-        this.userKey = userKey;
-    }
 }
+
+
+
+
