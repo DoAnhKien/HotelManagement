@@ -18,17 +18,17 @@ public class UserPokemonController {
 
 
     @PostMapping("/add")
-    public UserPokemon insertOrSaveHotelRoom(@RequestBody UserPokemon userPokemon) {
+    public UserPokemon insertOrSaveUserPokemon(@RequestBody UserPokemon userPokemon) {
         return userPokemonServices.insertOrUpDateHotelRoom(userPokemon);
     }
 
     @PostMapping("/delete/{id}")
-    public void deleteHotelRoomById(@PathVariable int id) {
+    public void deleteUserPokemonById(@PathVariable int id) {
         userPokemonServices.deleteUserPokemonById(id);
     }
 
     @GetMapping("/all")
-    public List<UserPokemon> getAllHotelRooms() {
+    public List<UserPokemon> getAllUserPokemon() {
         return userPokemonServices.getAllUserPokemons();
     }
 
