@@ -31,4 +31,9 @@ public class UserController {
         services.deleteUerById(id);
     }
 
+    @PostMapping("/find/{email}")
+    public User findUserByEmail(@PathVariable String email) {
+        return services.findUserByEmail(email);
+    }
+
 }

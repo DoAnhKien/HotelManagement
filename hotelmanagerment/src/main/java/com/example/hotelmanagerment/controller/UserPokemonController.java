@@ -2,6 +2,7 @@ package com.example.hotelmanagerment.controller;
 
 
 import com.example.hotelmanagerment.model.HotelRoom;
+import com.example.hotelmanagerment.model.Pokemon;
 import com.example.hotelmanagerment.model.UserPokemon;
 import com.example.hotelmanagerment.service.UserPokemonServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,11 @@ public class UserPokemonController {
     @PostMapping("/get/{id}")
     public UserPokemon getUserPokemonById(@PathVariable int id) {
         return userPokemonServices.getUserPokemonById(id);
+    }
+
+    @PostMapping("/findUserPokemon/{id}")
+    public UserPokemon findUserPokemonById(@PathVariable int id) {
+        return userPokemonServices.findUserPokemonById(id);
     }
 
 }

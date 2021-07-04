@@ -21,6 +21,10 @@ public class UserPokemonServices {
         return userPokemonRepository.save(userPokemon);
     }
 
+    public UserPokemon findUserPokemonById(int id) {
+        return userPokemonRepository.findUserPokemonById(id);
+    }
+
     public void deleteUserPokemonById(int id) {
         userPokemonRepository.deleteById(id);
     }

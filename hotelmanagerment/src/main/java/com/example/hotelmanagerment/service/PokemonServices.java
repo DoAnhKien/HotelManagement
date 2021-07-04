@@ -19,4 +19,8 @@ public class PokemonServices {
         return (List<Pokemon>) repository.findAll();
     }
 
+    public Pokemon findPokemonById(int id) {
+        return repository.findPokemonById(id);
+    }
+
 }
