@@ -23,4 +23,8 @@ public class PokemonServices {
         return repository.findPokemonById(id);
     }
 
+    public Pokemon findPokemonByName(String pokemonName) {
+        return repository.findPokemonByPokemonName(pokemonName);
+    }
+
 }

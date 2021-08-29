@@ -25,4 +25,9 @@ public class PokemonController {
     public Pokemon findPokemonById(@PathVariable int id) {
         return services.findPokemonById(id);
     }
+
+    @PostMapping("/findPokemon/{pokemonName}")
+    public Pokemon findPokemonByName(@PathVariable String pokemonName) {
+        return services.findPokemonByName(pokemonName);
+    }
 }
