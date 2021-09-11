@@ -2,6 +2,8 @@ package com.example.hotelmanament2.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.khachsan.hotelmanament2.model.Customer;
+
 class CustomerTest {
 
     @org.junit.jupiter.api.Test

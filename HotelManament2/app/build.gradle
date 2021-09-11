@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.hotelmanament2"
+        applicationId "com.khachsan.hotelmanament2"
         minSdkVersion 27
 
         targetSdkVersion 30

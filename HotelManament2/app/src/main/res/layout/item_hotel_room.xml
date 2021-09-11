@@ -5,7 +5,7 @@
 
         <variable
             name="hotelRoom"
-            type="com.example.hotelmanament2.model.HotelRoom" />
+            type="com.khachsan.hotelmanament2.model.HotelRoom" />
 
     </data>
 

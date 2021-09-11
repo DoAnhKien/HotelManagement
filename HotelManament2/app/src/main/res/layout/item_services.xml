@@ -5,7 +5,7 @@
 
         <variable
             name="serviecs"
-            type="com.example.hotelmanament2.model.Service" />
+            type="com.khachsan.hotelmanament2.model.Service" />
 
     </data>
 

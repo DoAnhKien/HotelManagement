@@ -1,7 +1,0 @@
-package com.example.hotelmanament2.aenum;
-
-public enum CustomerStatus {
-    CHECK_TO_ADD_CUSTOMER_FAIL, CHECK_TO_AĐ_CUSTOMER_FAIL,
-    SAVE_CUSTOMER_TO_DATA_FAIL, SAVE_CUSTOMER_TO_DATA_SUCCESS,
-    UPDATE_CUSTOMER_SUCCESS, UPDATE_CUSTOMER_FAIL
-}

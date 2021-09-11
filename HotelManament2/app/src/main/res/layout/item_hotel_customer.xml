@@ -6,7 +6,7 @@
 
         <variable
             name="customer"
-            type="com.example.hotelmanament2.model.Customer" />
+            type="com.khachsan.hotelmanament2.model.Customer" />
     </data>
 
     <androidx.cardview.widget.CardView
