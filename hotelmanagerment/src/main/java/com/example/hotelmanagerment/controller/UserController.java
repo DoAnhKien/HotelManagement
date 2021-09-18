@@ -25,6 +25,10 @@ public class UserController {
         return services.addUser(user);
     }
 
+    @PostMapping("/update")
+    public User updateUser(@RequestBody User user) {
+        return services.updateUser(user);
+    }
 
     @PostMapping("/delete/{id}")
     public void deleteUserById(@PathVariable int id) {

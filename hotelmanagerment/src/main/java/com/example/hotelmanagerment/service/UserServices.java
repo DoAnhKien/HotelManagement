@@ -21,11 +21,7 @@ public class UserServices {
         return userRepository.save(user);
     }
 
-    public User addUSer1(User user) {
-        User tempUser = userRepository.findUserByUserEmail(user.getUserEmail());
-        if (tempUser != null) {
-            return null;
-        }
+    public User updateUser(User user) {
         return userRepository.save(user);
     }
 
