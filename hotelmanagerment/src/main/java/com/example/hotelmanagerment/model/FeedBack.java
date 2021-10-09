@@ -10,7 +10,7 @@ public class FeedBack {
     @Id()
     private int feedBackId;
     private int userId;
-    private long feedBackDate;
+    private String feedBackDate;
     private String feedBackContent;
 
     public FeedBack() {
@@ -32,11 +32,11 @@ public class FeedBack {
         this.userId = userId;
     }
 
-    public long getFeedBackDate() {
+    public String getFeedBackDate() {
         return feedBackDate;
     }
 
-    public void setFeedBackDate(long feedBackDate) {
+    public void setFeedBackDate(String feedBackDate) {
         this.feedBackDate = feedBackDate;
     }
 

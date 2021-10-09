@@ -11,8 +11,8 @@ public class Report {
     private int reportId;
     private int adminId;
     private int userId;
-    private long reportCreateDate;
-    private long reportHandleDate;
+    private String reportCreateDate;
+    private String reportHandleDate;
     private String reportContent;
     private String reportResult;
     private boolean reportStatus;
@@ -20,7 +20,7 @@ public class Report {
     public Report() {
     }
 
-    public Report(int reportId, int adminId, int userId, long reportCreateDate, long reportHandleDate, String reportContent, String reportResult, boolean reportStatus) {
+    public Report(int reportId, int adminId, int userId, String reportCreateDate, String reportHandleDate, String reportContent, String reportResult, boolean reportStatus) {
         this.reportId = reportId;
         this.adminId = adminId;
         this.userId = userId;
@@ -30,7 +30,6 @@ public class Report {
         this.reportResult = reportResult;
         this.reportStatus = reportStatus;
     }
-
 
     public int getReportId() {
         return reportId;
@@ -56,19 +55,19 @@ public class Report {
         this.userId = userId;
     }
 
-    public long getReportCreateDate() {
+    public String getReportCreateDate() {
         return reportCreateDate;
     }
 
-    public void setReportCreateDate(long reportCreateDate) {
+    public void setReportCreateDate(String reportCreateDate) {
         this.reportCreateDate = reportCreateDate;
     }
 
-    public long getReportHandleDate() {
+    public String getReportHandleDate() {
         return reportHandleDate;
     }
 
-    public void setReportHandleDate(long reportHandleDate) {
+    public void setReportHandleDate(String reportHandleDate) {
         this.reportHandleDate = reportHandleDate;
     }
 
