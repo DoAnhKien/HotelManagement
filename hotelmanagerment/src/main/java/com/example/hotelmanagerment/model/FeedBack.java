@@ -12,6 +12,7 @@ public class FeedBack {
     private int userId;
     private String feedBackDate;
     private String feedBackContent;
+    private boolean isHandle;
 
     public FeedBack() {
     }
@@ -46,5 +47,13 @@ public class FeedBack {
 
     public void setFeedBackContent(String feedBackContent) {
         this.feedBackContent = feedBackContent;
+    }
+
+    public boolean isHandle() {
+        return isHandle;
+    }
+
+    public void setHandle(boolean handle) {
+        isHandle = handle;
     }
 }
