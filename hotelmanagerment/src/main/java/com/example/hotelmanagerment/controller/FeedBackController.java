@@ -32,7 +32,7 @@ public class FeedBackController {
     }
 
     @PostMapping("/find/{userId}")
-    public FeedBack findReportByUserId(@PathVariable int userId) {
+    public List<FeedBack> findReportByUserId(@PathVariable int userId) {
         return services.getFeedBackByUserId(userId);
     }
 }

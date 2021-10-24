@@ -28,7 +28,7 @@ public class FeedBackServices {
         return (List<FeedBack>) feedBackRepository.findAll();
     }
 
-    public FeedBack getFeedBackByUserId(int id) {
+    public List<FeedBack> getFeedBackByUserId(int id) {
         return feedBackRepository.findFeedBackByUserId(id);
     }
 
