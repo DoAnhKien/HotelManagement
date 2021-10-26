@@ -16,11 +16,13 @@ public class Report {
     private String reportContent;
     private String reportResult;
     private boolean reportStatus;
+    private String userName;
 
     public Report() {
     }
 
-    public Report(int reportId, int adminId, int userId, String reportCreateDate, String reportHandleDate, String reportContent, String reportResult, boolean reportStatus) {
+
+    public Report(int reportId, int adminId, int userId, String reportCreateDate, String reportHandleDate, String reportContent, String reportResult, boolean reportStatus, String userName) {
         this.reportId = reportId;
         this.adminId = adminId;
         this.userId = userId;
@@ -29,6 +31,7 @@ public class Report {
         this.reportContent = reportContent;
         this.reportResult = reportResult;
         this.reportStatus = reportStatus;
+        this.userName = userName;
     }
 
     public int getReportId() {
@@ -93,5 +96,13 @@ public class Report {
 
     public void setReportStatus(boolean reportStatus) {
         this.reportStatus = reportStatus;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

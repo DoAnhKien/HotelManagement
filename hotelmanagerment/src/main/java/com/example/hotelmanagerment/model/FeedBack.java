@@ -13,8 +13,18 @@ public class FeedBack {
     private String feedBackDate;
     private String feedBackContent;
     private boolean isHandle;
+    private String userName;
 
     public FeedBack() {
+    }
+
+    public FeedBack(int feedBackId, int userId, String feedBackDate, String feedBackContent, boolean isHandle, String userName) {
+        this.feedBackId = feedBackId;
+        this.userId = userId;
+        this.feedBackDate = feedBackDate;
+        this.feedBackContent = feedBackContent;
+        this.isHandle = isHandle;
+        this.userName = userName;
     }
 
     public int getFeedBackId() {
@@ -55,5 +65,13 @@ public class FeedBack {
 
     public void setHandle(boolean handle) {
         isHandle = handle;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }
