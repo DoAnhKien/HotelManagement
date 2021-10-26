@@ -12,13 +12,13 @@ public class FeedBack {
     private int userId;
     private String feedBackDate;
     private String feedBackContent;
-    private boolean isHandle;
+    private int isHandle;
     private String userName;
 
     public FeedBack() {
     }
 
-    public FeedBack(int feedBackId, int userId, String feedBackDate, String feedBackContent, boolean isHandle, String userName) {
+    public FeedBack(int feedBackId, int userId, String feedBackDate, String feedBackContent, int isHandle, String userName) {
         this.feedBackId = feedBackId;
         this.userId = userId;
         this.feedBackDate = feedBackDate;
@@ -59,12 +59,12 @@ public class FeedBack {
         this.feedBackContent = feedBackContent;
     }
 
-    public boolean isHandle() {
+    public int getIsHandle() {
         return isHandle;
     }
 
-    public void setHandle(boolean handle) {
-        isHandle = handle;
+    public void setIsHandle(int isHandle) {
+        this.isHandle = isHandle;
     }
 
     public String getUserName() {
